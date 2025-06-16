@@ -23,13 +23,11 @@ Make sure all libraries are installed before running the scripts.
 1. Logistic Regression:  
    Logistic regression is a statistical model commonly used for classification tasks. It models the dependent (output) variable as a binary or categorical value using a logistic or sigmoid function. In this project, an L2 regularized logistic regression model was employed for experimentation. While logistic regression is typically used for classification, it can also help in predicting categorical outcomes in crop yield prediction.
 
-2. Neural Networks:  
-   Neural networks mimic the structure of the human brain, where interconnected neurons process input data and produce output. In an artificial neural network, each input node connects to multiple neurons across hidden layers, which are in turn linked to output nodes. During training, weights on these connections are adjusted through backpropagation and gradient descent algorithms to minimize prediction errors, improving accuracy in crop yield predictions.
 
-3. Random Forest:  
+2. Random Forest:  
    Random Forest is an ensemble learning technique based on bagging (Bootstrap Aggregating), where multiple decision trees are trained on random subsets of the data. This method enhances prediction accuracy by averaging the results of many individual models, reducing variance and overfitting. Random Forest handles missing data and outliers well and is parallelizable, making it efficient in training large datasets.
 
-4. Extreme Gradient Boosting (XGBoost):  
+3. Extreme Gradient Boosting (XGBoost):  
    XGBoost is an ensemble method based on gradient-boosted decision trees, where each successive model corrects errors made by the previous ones. In this approach, models are added sequentially until no further improvement can be made. XGBoost uses gradient descent to minimize the loss function and is particularly effective for large datasets with complex patterns, making it a powerful tool for crop yield prediction.
 
 # Using Streamlit for Interactive Interface:   
