@@ -17,19 +17,29 @@
 
 ## 📊 Model Performance
 
-- **Crop Recommendation System**: Achieved an impressive **98% validation accuracy** (benchmarked against PyCaret which reached up to 99.35%).
-- **Yield Prediction System**: Delivered a robust **R² score of 0.84**, trained on a comprehensive agricultural dataset comprising 246,091 records.
+- **Crop Recommendation System**:
+  - **Random Forest Classifier**: 100% Accuracy
+  - **Voting Classifier (Ensemble)**: 98% Accuracy
+  - **Logistic Regression**: 97% Accuracy
+  - **Ridge Classifier**: 66% Accuracy
+
+- **Yield Prediction System**: 
+  - **Voting Regressor (Ensemble)**: R² Score of 0.8439
+  - Incorporates Random Forest Regressor and Gradient Boosting Regressor to achieve robust continuous predictions on crop production.
 
 ## 🧠 Approach & Models
 
-1. **Random Forest Classifier/Regressor**:
-   Leveraged as an ensemble method utilizing bagging (Bootstrap Aggregating). Multiple decision trees are trained on random data subsets, reducing variance and mitigating overfitting. It excels at handling missing data and outliers while processing large datasets efficiently.
+1. **Ensemble Voting Architectures**:
+   The core of both recommendation and yield systems relies on Ensembles. For recommendation, predictions from Logistic Regression, Random Forest, and Ridge classifiers are combined to reach a stable 98% accuracy. For yield prediction, a Voting Regressor leverages Random Forest and Gradient Boosting.
 
-2. **Extreme Gradient Boosting (XGBoost)**:
-   An advanced ensemble technique based on gradient-boosted decision trees. It sequentially corrects errors from previous models, employing gradient descent to minimize the loss function. This makes it highly effective for extracting complex patterns from large-scale agricultural data.
+2. **Random Forest**:
+   Leveraged utilizing bagging (Bootstrap Aggregating). Multiple decision trees are trained on random data subsets, reducing variance and mitigating overfitting. Demonstrated 100% validation accuracy on the recommendation dataset.
 
-3. **Logistic Regression**:
-   Employed primarily for experimentation and baseline comparisons. It uses L2 regularization to model categorical outcomes for crop recommendation tasks.
+3. **Gradient Boosting / XGBoost**:
+   Used in yield prediction to sequentially correct errors from previous models, employing gradient descent to minimize the loss function. This makes it highly effective for extracting complex patterns from large-scale agricultural data.
+
+4. **Linear Models (Logistic Regression & Ridge)**:
+   Employed for classification tasks in crop recommendation, offering strong baseline performances (97% and 66% respectively) and contributing to the stability of the ensemble model.
 
 ## 💻 Interactive Streamlit Interface
 
