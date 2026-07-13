@@ -5,7 +5,7 @@
 
 # Project Overview
 
-  Agriculture in India faces numerous challenges, including uncertain crop outcomes and suboptimal crop choices. Machine learning offers a transformative opportunity to improve yield predictions and crop recommendations. This project focuses on predicting crop yield using various machine learning models, evaluating their performance based on mean absolute error (MAE). By considering key factors such as temperature, rainfall, and land area, these models guide farmers in selecting the right crops to maximize yield and improve profitability.
+  Agriculture in India faces numerous challenges, including uncertain crop outcomes and suboptimal crop choices. Machine learning offers a transformative opportunity to improve yield predictions and crop recommendations. This project focuses on predicting crop yield using various machine learning models, evaluating their performance based on the R-squared (R²) metric. By considering key factors such as temperature, rainfall, and land area, these models guide farmers in selecting the right crops to maximize yield and improve profitability.
 
 # Required Libraries:
 - Numpy
@@ -17,6 +17,11 @@
 - Streamlit
 
 Make sure all libraries are installed before running the scripts.
+
+# Performance Metrics:
+
+- **Crop Recommendation Model**: Achieved **98% validation accuracy** (with PyCaret baselines reaching up to 99.35%).
+- **Yield Prediction Model**: Achieved an **R² score of 0.84** on a 246,091-row dataset.
 
 # Models Used:
 
@@ -36,4 +41,4 @@ Make sure all libraries are installed before running the scripts.
 
 # Conclusion
 
-  The machine learning models developed in this project offer valuable insights for farmers by predicting crop yields and recommending the best crops to grow based on specific environmental factors. The results of these models are compared using the mean absolute error (MAE) to determine their accuracy, helping farmers make data-driven decisions that maximize productivity and sustainability in agriculture. The integration of Streamlit enhances user experience by providing an interactive platform that delivers real-time predictions and insights, ensuring that farmers can act on information promptly and effectively.
+  The machine learning models developed in this project offer valuable insights for farmers by predicting crop yields and recommending the best crops to grow based on specific environmental factors. The results of these models are compared using the R-squared (R²) metric to determine their accuracy, helping farmers make data-driven decisions that maximize productivity and sustainability in agriculture. The integration of Streamlit enhances user experience by providing an interactive platform that delivers real-time predictions and insights, ensuring that farmers can act on information promptly and effectively.

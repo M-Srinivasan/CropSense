@@ -4,7 +4,5 @@ matplotlib
 seaborn
 scikit-learn
 xgboost
-pycaret
 opencv-python
-keras
-tensorflow
+streamlit
