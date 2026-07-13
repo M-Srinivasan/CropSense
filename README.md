@@ -15,17 +15,6 @@
 - **Deep Learning**: TensorFlow
 - **Data Manipulation & Visualization**: Pandas, NumPy, Matplotlib
 
-## 📊 Model Performance
-
-- **Crop Recommendation System**:
-  - **Random Forest Classifier**: 100% Accuracy
-  - **Voting Classifier (Ensemble)**: 98% Accuracy
-  - **Logistic Regression**: 97% Accuracy
-  - **Ridge Classifier**: 66% Accuracy
-
-- **Yield Prediction System**: 
-  - **Voting Regressor (Ensemble)**: R² Score of 0.8439
-  - Incorporates Random Forest Regressor and Gradient Boosting Regressor to achieve robust continuous predictions on crop production.
 
 ## 🧠 Approach & Models
 
